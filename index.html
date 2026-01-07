@@ -3,22 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>HomeCamper Notification Settings</title>
   </head>
+
   <body>
     <header>
       <a href="/" class="logo">
-        <img src="fotos/hom" alt="HomeCamper | Campspace" />
+        <img
+          src="fotos/homecamper_campspace_light.png"
+          alt="HomeCamper | Campspace"
+        />
       </a>
+
       <nav class="nav-right">
         <a href="#" class="nav-link">Calendar</a>
         <a href="#" class="nav-link">Bookings</a>
         <a href="#" class="nav-link">Menu</a>
         <a href="#" class="nav-link">Messages</a>
+
         <div class="settings-group">
           <span>EUR</span>
           <img src="fotos/ico_flag-gb.png" alt="EN" class="flag-icon" />
         </div>
+
         <a href="#" class="profile-icon" aria-label="Profile">
           <svg
             width="24"
@@ -28,7 +37,12 @@
             aria-hidden="true"
           >
             <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+              10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3
+              1.34 3 3s-1.34 3-3 3-3-1.34-3-3
+              1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22
+              .03-1.99 4-3.08 6-3.08 1.99 0 5.97
+              1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
             />
           </svg>
         </a>
@@ -40,76 +54,148 @@
         <h1>Notification Preferences</h1>
         <p>Manage how you want to be notified about bookings and messages.</p>
       </section>
+
       <nav>
         <a href="#">Host Settings</a> |
         <a href="#">Guest Settings</a>
       </nav>
-      <hr />
-
-      <div class="row header">
-        <div class="column"><strong>Activity</strong></div>
-        <div class="column"><strong>E-mail</strong></div>
-        <div class="column"><strong>Push (App)</strong></div>
-        <div class="column"><strong>SMS</strong></div>
-      </div>
 
       <section>
-        <h2>RESERVATIONS</h2>
-        <div class="row">
-          <div class="column text">
-            <strong>New reservation request</strong><br />
-            <small>When a guest wants to book your spot.</small>
+        <fieldset>
+          <h2>Reservations</h2>
+
+          <div class="container">
+            <div class="notification-type">
+              <label>New reservation request</label>
+              <label>When a guest wants to book your spot.</label>
+            </div>
+
+            <div class="options">
+              <p>Email: <input type="checkbox" name="reservation" /></p>
+              <p>Push (App) <input type="checkbox" name="reservation" /></p>
+              <p>SMS <input type="checkbox" name="reservation" /></p>
+            </div>
           </div>
-          <div class="column"><span>🔒 Required</span></div>
-          <div class="column"><input type="checkbox" checked /></div>
-          <div class="column"><input type="checkbox" checked /></div>
-        </div>
-        <div class="row">
-          <div class="column text">
-            <strong>New message</strong><br />
-            <small>Direct chat with your guests.</small>
+        </fieldset>
+
+        <fieldset>
+
+          <div class="container">
+            <div class="notification-type">
+              <label>New message</label>
+              <label>Direct chat with your guests.</label>
+            </div>
+
+            <div class="options">
+              <p>Email: <input type="checkbox" name="reservation" /></p>
+              <p>Push (App) <input type="checkbox" name="reservation" /></p>
+              <p>SMS <input type="checkbox" name="reservation" /></p>
+            </div>
           </div>
-          <div class="column"><input type="checkbox" checked /></div>
-          <div class="column"><input type="checkbox" checked /></div>
-          <div class="column"><input type="checkbox" checked /></div>
-        </div>
-        <div class="row">
-          <div class="column text">
-            <strong>Date change proposal</strong><br />
-            <small>When an admin or guest suggests new dates.</small>
+        </fieldset>
+
+        <fieldset>
+          <h2>Payments</h2>
+
+          <div class="container">
+            <div class="notification-type">
+              <label>Payment received</label>
+              <label>Confirmation that the booking is paid.</label>
+            </div>
+
+            <div class="options">
+              <p>Email: <input type="checkbox" name="reservation" /></p>
+              <p>Push (App) <input type="checkbox" name="reservation" /></p>
+              <p>SMS <input type="checkbox" name="reservation" /></p>
+            </div>
           </div>
-          <div class="column"><span>🔒 Required</span></div>
-          <div class="column"><input type="checkbox" checked /></div>
-          <div class="column"><span>—</span></div>
-        </div>
+        </fieldset>
       </section>
+      <fieldset>
 
-      <section>
-        <h3>PAYMENTS</h3>
-        <div class="row">
-          <div class="column text">
-            <strong>Payment received</strong><br />
-            <small>Confirmation that the booking is paid.</small>
+          <div class="container">
+            <div class="notification-type">
+              <label>Payment pending</label>
+              <label>A guest has started the payment process.</label>
+            </div>
+
+            <div class="options">
+              <p>Email: <input type="checkbox" name="reservation" /></p>
+              <p>Push (App) <input type="checkbox" name="reservation" /></p>
+              <p>SMS <input type="checkbox" name="reservation" /></p>
+            </div>
           </div>
-          <div class="column"><span>🔒 Required</span></div>
-          <div class="column"><input type="checkbox" checked /></div>
-          <div class="column"><input type="checkbox" checked /></div>
-        </div>
+        </fieldset>
       </section>
+      <fieldset>
+        <h2>CANCELLATIONS</h2>
 
-      <section>
-        <h3>CANCELLATIONS</h3>
-        <div class="row">
-          <div class="column text">
-            <strong>Booking cancelled</strong><br />
-            <small>By guest, host, or support.</small>
+          <div class="container">
+            <div class="notification-type">
+              <label>Booking cancelled</label>
+              <label>By guest, host, or support.</label>
+            </div>
+
+            <div class="options">
+              <p>Email: <input type="checkbox" name="reservation" /></p>
+              <p>Push (App) <input type="checkbox" name="reservation" /></p>
+              <p>SMS <input type="checkbox" name="reservation" /></p>
+            </div>
           </div>
-          <div class="column"><span>🔒 Required</span></div>
-          <div class="column"><span>🔒 Required</span></div>
-          <div class="column"><span>—</span></div>
-        </div>
+        </fieldset>
+      </section>
+      <fieldset>
+
+          <div class="container">
+            <div class="notification-type">
+              <label>Expired request</label>
+              <label>Request cancelled after 108 hours.</label>
+            </div>
+
+            <div class="options">
+              <p>Email: <input type="checkbox" name="reservation" /></p>
+              <p>Push (App) <input type="checkbox" name="reservation" /></p>
+              <p>SMS <input type="checkbox" name="reservation" /></p>
+            </div>
+          </div>
+        </fieldset>
+      </section>
+      <fieldset>
+          <h2>Reminders</h2>
+
+          <div class="container">
+            <div class="notification-type">
+              <label>Unanswered request (12h)</label>
+              <label>Friendly reminder to reply to a guest.</label>
+            </div>
+
+            <div class="options">
+              <p>Email: <input type="checkbox" name="reservation" /></p>
+              <p>Push (App) <input type="checkbox" name="reservation" /></p>
+              <p>SMS <input type="checkbox" name="reservation" /></p>
+            </div>
+          </div>
+        </fieldset>
+      </section>
+      <fieldset>
+
+          <div class="container">
+            <div class="notification-type">
+              <label>Write a review</label>
+              <label>Review your guest 20 days after their stay.</label>
+            </div>
+
+            <div class="options">
+              <p>Email: <input type="checkbox" name="reservation" /></p>
+              <p>Push (App) <input type="checkbox" name="reservation" /></p>
+              <p>SMS <input type="checkbox" name="reservation" /></p>
+            </div>
+          </div>
+        </fieldset>
       </section>
     </main>
+
+  
 
     <footer class="page-footer" role="contentinfo">
       <div class="container">
@@ -166,6 +252,7 @@
               </li>
             </ul>
           </div>
+
           <div class="col-6 col-lg-3">
             <h3 class="u-m-none u-font-lg">Popular Regions</h3>
             <ul class="u-m-none o-list">
@@ -255,6 +342,7 @@
               </li>
             </ul>
           </div>
+
           <div class="col-6 col-lg-3">
             <h3 class="u-m-none u-font-lg">FAQ</h3>
             <ul class="u-m-none o-list">
@@ -278,6 +366,7 @@
               </li>
             </ul>
           </div>
+
           <div class="col-6 col-lg-3">
             <h3 class="u-m-none u-font-lg">Inspiration</h3>
             <ul class="u-m-none o-list">
@@ -288,63 +377,6 @@
                 >
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-lg-3">
-            <h3 class="u-m-none u-font-lg">About us</h3>
-            <ul class="u-m-none o-list">
-              <li>
-                <a href="https://campspace.com/en/about-campspace">About us</a>
-              </li>
-              <li><a href="https://campspace.com/en/blog">Blog</a></li>
-              <li>
-                <a href="https://campspace.com/en/faq"
-                  >Frequently Asked Questions</a
-                >
-              </li>
-              <li><a href="https://campspace.com/en/partners">Partners</a></li>
-              <li><a href="https://campspace.com/en/contact">Contact</a></li>
-              <li>
-                <a
-                  href="https://drive.google.com/drive/u/0/folders/1kCj4_nUkQKj73xzfT7m0aAYVR2SROhhP"
-                  >In the media</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-lg-3">
-            <h3 class="u-m-none u-font-lg">Hosting</h3>
-            <ul class="u-m-none o-list">
-              <li><a href="https://campspace.com/en/host">Become a host</a></li>
-              <li>
-                <a href="https://campspace.com/en/campspace-host-security-plan"
-                  >HomeCamper | Campspace Host Security Plan</a
-                >
-              </li>
-              <li>
-                <a href="https://campspace.com/en/faq"
-                  >Frequently Asked Questions hosts</a
-                >
-              </li>
-              <li>
-                <a href="https://campspace.com/en/p/covid19_323"
-                  >Be prepared during COVID-19</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-lg-6">
-            <h3 class="u-m-none u-font-lg">
-              HomeCamper | Campspace is the platform for the most unique and
-              sustainable outdoor stays
-            </h3>
-            <p class="u-m-none">
-              Explore and book tent or campervan pitches, luxury tents,
-              treehouses and cabins.
-            </p>
           </div>
         </div>
       </div>
