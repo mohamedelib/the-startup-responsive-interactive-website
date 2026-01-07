@@ -1,0 +1,290 @@
+:root {
+  /* Kleuren */
+  --primary-color: #2e855b;
+  --primary-color-hover: #246b49;
+  --color-text-primary: #2c2c2c;
+  --color-border: #e2e2e1;
+  --color-background-white: #ffffff;
+
+  /* Typografie */
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  /* --- Spacing Styleguide --- */
+  --space-xs: 0.5rem;  /* 8px */
+  --space-s: 1rem;    /* 16px */
+  --space-m: 1.5rem;  /* 24px */
+  --space-l: 2.5rem;  /* 40px */
+  --space-xl: 4rem;   /* 64px */
+}
+
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-white);
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+nav{
+  margin-bottom: var(--space-s);
+}
+
+/* TYPOGRAFIE */
+h1,
+h2,
+h3,
+h4,
+.logo {
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+
+}
+
+h1 {
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: var(--space-xs);
+}
+
+h2,
+h3 {
+  font-size: 0.75rem; /* 12px */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  text-decoration: underline;
+  margin-bottom: var(--space-s);
+}
+
+p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.column.text {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+/* card */
+
+.container{
+  border: 1px solid var(--color-border);
+  display: block;
+  max-width: 500px;
+  border-radius: 12px;
+  margin-bottom: var(--space-l);
+}
+
+.notification-type{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--color-border);
+  padding: 20px 30px;
+}
+.notification-type label:first-of-type {
+  font-weight: bold;
+}
+.notification-type label:last-of-type {
+  font-style: italic;
+}
+.options{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ padding: 10px 20px;
+}
+
+.options p {
+  display: flex;
+  justify-content: space-between;
+}
+/* einde card */
+
+/* Inputs */
+
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 3.125rem; /* 50px */
+  height: 1.75rem; /* 28px */
+  background-color: #399859;
+  border-radius: 3.125rem;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  rotate: 180deg;
+}
+
+input[type="checkbox"]::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 1.375rem; 
+  height: 1.375rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: left 0.3s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+input[type="checkbox"]:checked {
+  background-color: grey;
+}
+
+input[type="checkbox"]:checked::after {
+  left: 25px;
+}
+
+
+/* De form */
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+text-decoration: underline;
+}
+label {
+  font-weight: 100;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 3.125rem; /* 50px */
+  height: 1.75rem; /* 28px */
+  background-color: #399859;
+  border-radius: 3.125rem;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  rotate: 180deg;
+}
+
+input[type="checkbox"]::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 1.375rem; 
+  height: 1.375rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: left 0.3s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+input[type="checkbox"]:checked {
+  background-color: grey;
+}
+
+input[type="checkbox"]:checked::after {
+  left: 25px;
+}
+
+
+
+
+
+.locked-toggle {
+  width: 3.125rem;       /* 50px */
+  height: 1.75rem;       /* 28px */
+  background-color: grey; 
+  border-radius: 3.125rem;
+  
+  position: relative;
+  display: inline-block;
+  cursor: not-allowed;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  vertical-align: middle;
+}
+
+/* Het rondje*/
+.locked-toggle {
+  width: 3.125rem;       /* 50px */
+  height: 1.75rem;       /* 28px */
+  background-color: #9c9c9c; /* Kleur van de 'checked' status */
+  border-radius: 3.125rem;
+  
+  position: relative;
+  display: inline-block;
+  cursor: not-allowed;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  vertical-align: middle;
+}
+
+/* Het rondje met het slotje */
+.toggle-knob {
+  width: 1.375rem;       /* 22px */
+  height: 1.375rem;      /* 22px */
+  background-color: #b7b7b7;
+  border-radius: 50%;
+  
+  position: absolute;
+  top: 3px;
+  left: 3px;             
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  z-index: 2;            
+}
+
+/* Het slot icoontje */
+.lock-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  fill: #4b4b4b;
+}
+
+/* De tekst oN */
+.toggle-text {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%); 
+  
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 11px;       
+  color: #3d3d3d;          
+  pointer-events: none;
+  display: block;        
+}
+

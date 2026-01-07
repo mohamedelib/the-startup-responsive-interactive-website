@@ -1,0 +1,15 @@
+nav a:first-of-type {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 4px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid var(--color-border);
+}
+
