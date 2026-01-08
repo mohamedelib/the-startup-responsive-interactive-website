@@ -74,9 +74,9 @@ h2,
 h3 {
   font-size: 0.75rem; /* 12px */
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 0.06rem;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   margin-bottom: var(--space-s);
 }
 
