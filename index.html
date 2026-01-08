@@ -18,10 +18,10 @@
       </a>
 
       <nav class="nav-right">
-        <a href="#" class="nav-link">Calendar</a>
-        <a href="#" class="nav-link">Bookings</a>
-        <a href="#" class="nav-link">Menu</a>
-        <a href="#" class="nav-link">Messages</a>
+          <a href="#" class="nav-link">Calendar</a>
+          <a href="#" class="nav-link">Bookings</a>
+          <a href="#" class="nav-link">Menu</a>
+          <a href="#" class="nav-link">Messages</a>
 
         <div class="settings-group">
           <span>EUR</span>
@@ -60,16 +60,14 @@
         <a href="#">Guest Settings</a>
       </nav>
 
-      <section>
+      <form id="host-settings">
         <fieldset>
           <h2>Reservations</h2>
-
           <div class="container">
             <div class="notification-type">
               <label>New reservation request</label>
               <label>When a guest wants to book your spot.</label>
             </div>
-
             <div class="options">
               <p>Email: <input type="checkbox" name="reservation" /></p>
               <p>Push (App) <input type="checkbox" name="reservation" /></p>
@@ -79,13 +77,11 @@
         </fieldset>
 
         <fieldset>
-
           <div class="container">
             <div class="notification-type">
               <label>New message</label>
               <label>Direct chat with your guests.</label>
             </div>
-
             <div class="options">
               <p>Email: <input type="checkbox" name="direct-chat" /></p>
               <p>Push (App) <input type="checkbox" name="direct-chat" /></p>
@@ -96,29 +92,27 @@
 
         <fieldset>
           <h2>Payments</h2>
-
           <div class="container">
             <div class="notification-type">
               <label>Payment received</label>
               <label>Confirmation that the booking is paid.</label>
             </div>
-
             <div class="options">
               <p>Email: <input type="checkbox" name="bookingconfirmation" /></p>
-              <p>Push (App) <input type="checkbox" name="bookingconfirmation" /></p>
+              <p>
+                Push (App) <input type="checkbox" name="bookingconfirmation" />
+              </p>
               <p>SMS <input type="checkbox" name="bookingconfirmation" /></p>
             </div>
           </div>
         </fieldset>
-      </section>
-      <fieldset>
 
+        <fieldset>
           <div class="container">
             <div class="notification-type">
               <label>Payment pending</label>
               <label>A guest has started the payment process.</label>
             </div>
-
             <div class="options">
               <p>Email: <input type="checkbox" name="payment" /></p>
               <p>Push (App) <input type="checkbox" name="payment" /></p>
@@ -126,16 +120,14 @@
             </div>
           </div>
         </fieldset>
-      </section>
-      <fieldset>
-        <h2>CANCELLATIONS</h2>
 
+        <fieldset>
+          <h2>Cancellations</h2>
           <div class="container">
             <div class="notification-type">
               <label>Booking cancelled</label>
               <label>By guest, host, or support.</label>
             </div>
-
             <div class="options">
               <p>Email: <input type="checkbox" name="cancelled" /></p>
               <p>Push (App) <input type="checkbox" name="cancelled" /></p>
@@ -143,15 +135,13 @@
             </div>
           </div>
         </fieldset>
-      </section>
-      <fieldset>
 
+        <fieldset>
           <div class="container">
             <div class="notification-type">
               <label>Expired request</label>
               <label>Request cancelled after 108 hours.</label>
             </div>
-
             <div class="options">
               <p>Email: <input type="checkbox" name="exprequest" /></p>
               <p>Push (App) <input type="checkbox" name="exprequest" /></p>
@@ -159,32 +149,30 @@
             </div>
           </div>
         </fieldset>
-      </section>
-      <fieldset>
-          <h2>Reminders</h2>
 
+        <fieldset>
+          <h2>Reminders</h2>
           <div class="container">
             <div class="notification-type">
               <label>Unanswered request (12h)</label>
               <label>Friendly reminder to reply to a guest.</label>
             </div>
-
             <div class="options">
               <p>Email: <input type="checkbox" name="unansweredrequest" /></p>
-              <p>Push (App) <input type="checkbox" name="unansweredrequest" /></p>
+              <p>
+                Push (App) <input type="checkbox" name="unansweredrequest" />
+              </p>
               <p>SMS <input type="checkbox" name="unansweredrequest" /></p>
             </div>
           </div>
         </fieldset>
-      </section>
-      <fieldset>
 
+        <fieldset>
           <div class="container">
             <div class="notification-type">
               <label>Write a review</label>
               <label>Review your guest 20 days after their stay.</label>
             </div>
-
             <div class="options">
               <p>Email: <input type="checkbox" name="review" /></p>
               <p>Push (App) <input type="checkbox" name="review" /></p>
@@ -192,10 +180,173 @@
             </div>
           </div>
         </fieldset>
-      </section>
-    </main>
+      </form>
 
-  
+      <form id="guest-settings">
+        <fieldset>
+          <h2>Your bookings</h2>
+          <div class="container">
+            <div class="notification-type">
+              <label><strong>Reservation requested</strong></label>
+              <label
+                ><em>Confirmation that your booking request was sent</em></label
+              >
+            </div>
+            <div class="options">
+              <p>Email: <input type="checkbox" name="reservation" /></p>
+              <p>Push (App) <input type="checkbox" name="reservation" /></p>
+              <p>SMS <input type="checkbox" name="reservation" /></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="container">
+            <div class="notification-type">
+              <label><strong>Booking accepted</strong></label>
+              <label><em>When a host approves your stay</em></label>
+            </div>
+            <div class="options">
+              <p>Email: <input type="checkbox" name="direct-chat" /></p>
+              <p>Push (App) <input type="checkbox" name="direct-chat" /></p>
+              <p>SMS <input type="checkbox" name="direct-chat" /></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="container">
+            <div class="notification-type">
+              <label><strong>Booking rejected</strong></label>
+              <label
+                ><em>When a host cannot accommodate your request</em></label
+              >
+            </div>
+            <div class="options">
+              <p>Email: <input type="checkbox" name="bookingconfirmation" /></p>
+              <p>
+                Push (App) <input type="checkbox" name="bookingconfirmation" />
+              </p>
+              <p>SMS <input type="checkbox" name="bookingconfirmation" /></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="container">
+            <div class="notification-type">
+              <label><strong>Host proposes changes</strong></label>
+              <label
+                ><em
+                  >When a host suggests new dates or a different price</em
+                ></label
+              >
+            </div>
+            <div class="options">
+              <p>Email: <input type="checkbox" name="host-changes" /></p>
+              <p>Push (App) <input type="checkbox" name="host-changes" /></p>
+              <p>SMS <input type="checkbox" name="host-changes" /></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <h2>Payments & Cancellations</h2>
+          <div class="container">
+            <div class="notification-type">
+              <label><strong>Payment successful</strong></label>
+              <label
+                ><em
+                  >Confirmation that your payment has been received</em
+                ></label
+              >
+            </div>
+            <div class="options">
+              <p>Email: <input type="checkbox" name="payment" /></p>
+              <p>Push (App) <input type="checkbox" name="payment" /></p>
+              <p>SMS <input type="checkbox" name="payment" /></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="container">
+            <div class="notification-type">
+              <label><strong>Booking cancelled</strong></label>
+              <label
+                ><em
+                  >When a booking is cancelled by you, the host, or support</em
+                ></label
+              >
+            </div>
+            <div class="options">
+              <p>Email: <input type="checkbox" name="cancelled" /></p>
+              <p>Push (App) <input type="checkbox" name="cancelled" /></p>
+              <p>SMS <input type="checkbox" name="cancelled" /></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="container">
+            <div class="notification-type">
+              <label><strong>Payment reminder</strong></label>
+              <label
+                ><em
+                  >A reminder to complete your payment to secure the spot</em
+                ></label
+              >
+            </div>
+            <div class="options">
+              <p>Email: <input type="checkbox" name="payment-reminder" /></p>
+              <p>
+                Push (App) <input type="checkbox" name="payment-reminder" />
+              </p>
+              <p>SMS <input type="checkbox" name="payment-reminder" /></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="container">
+            <div class="notification-type">
+              <label><strong>Automatic cancellation</strong></label>
+              <label
+                ><em
+                  >When a booking expires due to inactivity or non-payment</em
+                ></label
+              >
+            </div>
+            <div class="options">
+              <p>Email: <input type="checkbox" name="auto-cancellation" /></p>
+              <p>
+                Push (App) <input type="checkbox" name="auto-cancellation" />
+              </p>
+              <p>SMS <input type="checkbox" name="auto-cancellation" /></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <h2>Reviews</h2>
+          <div class="container">
+            <div class="notification-type">
+              <label><strong>Review your stay</strong></label>
+              <label
+                ><em
+                  >A reminder to share your experience after your trip</em
+                ></label
+              >
+            </div>
+            <div class="options">
+              <p>Email: <input type="checkbox" name="review" /></p>
+              <p>Push (App) <input type="checkbox" name="review" /></p>
+              <p>SMS <input type="checkbox" name="review" /></p>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
 
     <footer class="page-footer" role="contentinfo">
       <div class="container">
@@ -346,36 +497,16 @@
           <div class="col-6 col-lg-3">
             <h3 class="u-m-none u-font-lg">FAQ</h3>
             <ul class="u-m-none o-list">
-              <li>
-                <a
-                  href="https://campspace.com/en/faq/host/eum-repudiandae-et-totam_87"
-                  >Eum repudiandae et totam.</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://campspace.com/en/faq/host/qui-deserunt-error-rerum-ratione-et-quo_89"
-                  >Qui deserunt error rerum ratione et quo.</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://campspace.com/en/faq/host/quos-quod-itaque-est_91"
-                  >Quos quod itaque est.</a
-                >
-              </li>
+              <li><a href="#">Account settings</a></li>
+              <li><a href="#">Payments & Pricing</a></li>
+              <li><a href="#">Cancellations</a></li>
             </ul>
           </div>
 
           <div class="col-6 col-lg-3">
             <h3 class="u-m-none u-font-lg">Inspiration</h3>
             <ul class="u-m-none o-list">
-              <li>
-                <a
-                  href="https://campspace.com/en/p/new-one-with-cateogireius_217"
-                  >new one with cateogireius</a
-                >
-              </li>
+              <li><a href="#">Sustainable Camping</a></li>
             </ul>
           </div>
         </div>

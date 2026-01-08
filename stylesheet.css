@@ -177,6 +177,7 @@ fieldset {
 
 h2{
 text-decoration: underline;
+text-transform: uppercase;
 }
 label {
   font-weight: 100;
