@@ -8,8 +8,15 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-align: center;
   border-bottom: 2px solid var(--color-border);
+  max-width: 570px;
+  @media (min-width: 570px){
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+  }
 }
+
 

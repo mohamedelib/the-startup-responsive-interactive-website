@@ -35,6 +35,7 @@ body {
 main {
   margin: 0 auto;
   padding: 0 20px;
+  
 }
 ul {
   list-style: none;
@@ -100,6 +101,11 @@ p {
   max-width: 500px;
   border-radius: 12px;
   margin-bottom: var(--space-l);
+   @media (min-width: 570px){
+    min-width: 500px !important;
+    max-width: 800px !important;
+    justify-content: center;
+   }
 }
 
 .notification-type{
@@ -173,6 +179,8 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
+
+
 
 h2{
 text-decoration: underline;
@@ -286,4 +294,11 @@ input[type="checkbox"]:checked::after {
   pointer-events: none;
   display: block;        
 }
- */
+ 
+ form {
+  @media (min-width: 570px) {
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+  }
+ }
