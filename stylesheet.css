@@ -81,7 +81,7 @@ h3 {
 }
 
 p {
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-xs);
    font-size: 0,875rem /* 14px */
 }
