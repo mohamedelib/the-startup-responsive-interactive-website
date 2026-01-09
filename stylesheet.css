@@ -238,9 +238,9 @@ input[type="checkbox"]:checked::after {
 
 /* Het rondje*/
 .locked-toggle {
-  width: 3.125rem;       /* 50px */
-  height: 1.75rem;       /* 28px */
-  background-color: #9c9c9c; /* Kleur van de 'checked' status */
+  width: 3.125rem;       
+  height: 1.75rem;       
+  background-color: #9c9c9c; 
   border-radius: 3.125rem;
   
   position: relative;
@@ -282,7 +282,6 @@ input[type="checkbox"]:checked::after {
   top: 50%;
   transform: translateY(-50%); 
   
-  font-family: sans-serif;
   font-weight: bold;
   font-size: 11px;       
   color: #3d3d3d;          
