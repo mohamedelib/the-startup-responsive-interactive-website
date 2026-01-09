@@ -60,7 +60,7 @@ h1,
 h2,
 h3,
 h4,
-.logo {
+.logo, legend {
   font-family: var(--font-heading);
   color: var(--color-text-primary);
 
@@ -72,7 +72,8 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+legend {
   font-size: 1,125; /* 18px */
   font-weight: 700;
   margin-bottom: var(--space-s);
@@ -182,7 +183,7 @@ fieldset {
 
 
 
-h2{
+h2, legend{
 text-decoration: underline;
 text-transform: uppercase;
 }
