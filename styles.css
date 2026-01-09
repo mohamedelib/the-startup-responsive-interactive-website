@@ -1,4 +1,7 @@
-nav a:first-of-type {
+nav button{
+  all: unset;
+}
+nav button:first-of-type {
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 4px;
