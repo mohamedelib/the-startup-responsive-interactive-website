@@ -72,7 +72,7 @@ h1 {
 
 h2,
 h3 {
-  font-size: 0.75rem; /* 12px */
+  font-size: 1,125; /* 18px */
   font-weight: 700;
   /* text-transform: uppercase; */
   letter-spacing: 0.06rem;
@@ -83,6 +83,7 @@ h3 {
 p {
   color: var(--color-text-secondary);
   margin-bottom: var(--space-xs);
+   font-size: 0,875rem /* 14px */
 }
 
 .column.text {
