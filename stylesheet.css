@@ -223,9 +223,9 @@ input[type="checkbox"]:checked::after {
 
 
 
-.locked-toggle {
-  width: 3.125rem;       /* 50px */
-  height: 1.75rem;       /* 28px */
+/* .locked-toggle {
+  width: 3.125rem;       
+  height: 1.75rem;
   background-color: grey; 
   border-radius: 3.125rem;
   
@@ -288,4 +288,4 @@ input[type="checkbox"]:checked::after {
   pointer-events: none;
   display: block;        
 }
-
+ */
