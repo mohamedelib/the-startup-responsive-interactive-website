@@ -32,3 +32,11 @@ form button{
     background-color: #CBCBCB;
   }
 }
+
+
+.hidden{
+  display: none;
+}
+.saved{
+  padding: 8px 45px;
+ }

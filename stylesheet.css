@@ -317,7 +317,4 @@ input[type="checkbox"]:checked::after {
 
  }
 
- .saved{
-  display: none;
-  padding: 8px 45px;
- }
+ 
