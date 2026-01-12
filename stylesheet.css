@@ -303,3 +303,21 @@ input[type="checkbox"]:checked::after {
     justify-content: center;
   }
  }
+
+
+ /* Button */
+
+ button{
+  all: unset;
+  border: 3px solid black;
+  padding: 8px 50px;
+  margin: 0 auto;
+  border-radius: 20px;
+
+
+ }
+
+ .saved{
+  display: none;
+  padding: 8px 45px;
+ }

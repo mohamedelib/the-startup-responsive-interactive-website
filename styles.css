@@ -21,4 +21,14 @@ nav{
   }
 }
 
+/* submit button */
+form button{
+  display:flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
 
+  &:hover{
+    background-color: #CBCBCB;
+  }
+}
