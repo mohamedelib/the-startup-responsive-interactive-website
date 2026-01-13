@@ -1,7 +1,7 @@
 // 1: selecteer de button
-let saveButton = document.querySelector('button.save');
-let feedbackButton= document.querySelector('button.saved');
-
+let saveButton = document.querySelector('.save');
+let feedbackButton= document.querySelector('.saved');
+console.log(saveButton);
 // 2: wacht op een klik
 saveButton.addEventListener("click", function(){
  // 3: laat de feedback button zien, door een class weg te halen en toe tevoegen.
