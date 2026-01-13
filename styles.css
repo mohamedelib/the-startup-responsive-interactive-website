@@ -1,10 +1,18 @@
 nav button{
   all: unset;
+  cursor: pointer;
 }
-nav button:first-of-type {
+.active{
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 4px;
+  animation: pop 0.4s ease;
+
+ }
+
+ @keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 nav{
@@ -36,7 +44,8 @@ form button{
 
 .hidden{
   display: none;
-}
+}  
+
 .saved{
   padding: 8px 45px;
   animation: pop 0.4s ease;
@@ -46,4 +55,16 @@ form button{
  @keyframes pop {
   0% { transform: scale(0.8); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
+}
+
+
+.pop{
+  animation: pop 0.4s ease;
+
+ }
+
+ @keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
 }
