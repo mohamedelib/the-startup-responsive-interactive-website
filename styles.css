@@ -21,7 +21,6 @@ nav{
   text-align: center;
   border-bottom: 2px solid var(--color-border);
   max-width: 570px;
-  padding-left: var(--space-m);
   @media (min-width: 570px){
     max-width: 800px;
   }
@@ -97,4 +96,9 @@ details[open] summary::after {
 
 .page-intro{
   padding-left: var(--space-m);
+}
+
+.hostbtn, .guestbtn{
+width: 15em;
+padding-bottom: .5em;
 }
