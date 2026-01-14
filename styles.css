@@ -58,7 +58,7 @@ nav{
 
 
 .pop{
-  animation: pop 0.4s ease;
+  animation: pop 0.4s cubic-bezier(.38,-0.18,.08,1.33);
 
  }
 
