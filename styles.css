@@ -73,6 +73,7 @@ summary {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  padding-right: var(--space-s);
 }
 
 summary::marker,
@@ -101,8 +102,11 @@ details[open] summary::after {
 .hostbtn, .guestbtn{
 width: 15em;
 padding-bottom: .5em;
-}
 
+  @media (min-width: 570px) {
+    width: 30em;
+}
+}
 .notification-type{
   display: flex;
   flex-direction: column;
