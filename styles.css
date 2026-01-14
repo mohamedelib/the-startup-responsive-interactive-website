@@ -96,7 +96,7 @@ details[open] summary::after {
 } 
 
 .page-intro{
-  padding-left: var(--space-m);
+  padding-left: var(--space-xm);
 }
 
 .hostbtn, .guestbtn{
