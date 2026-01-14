@@ -87,7 +87,7 @@ summary::-webkit-details-marker {
 summary::after {
   content: "+";
   color: black;
-  font-size: 4rem;
+  font-size: 3rem;
   transition: transform 200ms ease;
 } 
 
