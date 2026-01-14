@@ -5,7 +5,6 @@ nav button{
 .active{
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 4px;
   animation: pop 0.4s ease;
 
  }
