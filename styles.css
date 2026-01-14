@@ -19,12 +19,11 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* margin: 0 auto; */
   text-align: center;
   border-bottom: 2px solid var(--color-border);
   max-width: 570px;
+  padding-left: var(--space-m);
   @media (min-width: 570px){
-    margin: 0 auto;
     max-width: 800px;
   }
 }
@@ -67,4 +66,7 @@ nav{
   0% { transform: scale(0.8); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
+}
+.page-intro{
+  padding-left: var(--space-m);
 }

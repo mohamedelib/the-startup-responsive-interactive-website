@@ -125,7 +125,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- padding: 10px 20px;
+ padding: 10px 30px;
 }
 
 .options label {
@@ -183,9 +183,10 @@ fieldset {
 
 
 
-h2, legend{
+h2, .summary-text{
 text-decoration: underline;
 text-transform: uppercase;
+padding-left: var(--space-m);
 }
 label {
   font-weight: 100;
