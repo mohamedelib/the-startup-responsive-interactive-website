@@ -11,11 +11,12 @@
   --font-body: "Open Sans", sans-serif;
 
   /* --- Spacing Styleguide --- */
-  --space-xs: 0.5rem;  /* 8px */
-  --space-s: 1rem;    /* 16px */
-  --space-m: 1.5rem;  /* 24px */
-  --space-l: 2.5rem;  /* 40px */
-  --space-xl: 4rem;   /* 64px */
+  --space-xs: 0.5rem; /* 8px */
+  --space-s: 1rem; /* 16px */
+  --space-m: 1.5rem; /* 24px */
+  --space-xm: 1.875rem; /* 30px */
+  --space-l: 2.5rem; /* 40px */
+  --space-xl: 4rem; /* 64px */
 }
 
 /* GLOBAL */
@@ -34,8 +35,6 @@ body {
 
 main {
   margin: 0 auto;
-  padding: 40px 20px;
-  
 }
 ul {
   list-style: none;
@@ -51,7 +50,7 @@ img {
   display: block;
 }
 
-nav{
+nav {
   margin-bottom: var(--space-s);
 }
 
@@ -63,7 +62,6 @@ h4,
 .logo, legend {
   font-family: var(--font-heading);
   color: var(--color-text-primary);
-
 }
 
 h1 {
