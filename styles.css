@@ -32,9 +32,11 @@ nav{
   gap: 10px;
   align-items: center;
   flex-direction: row;
+transition: .2s cubic-bezier(.38,-0.18,.08,1.33);
 
   &:hover{
     background-color: #CBCBCB;
+    transform: scale(1.05, 1.1);
   }
 }
 
