@@ -34,7 +34,8 @@ body {
 }
 
 main {
-  max-width: 800px;
+padding: 0 var(--space-l);
+
 }
 ul {
   list-style: none;
@@ -94,12 +95,12 @@ p {
 .container {
   border: 1px solid var(--color-border);
   display: block;
-  max-width: 500px;
+
   border-radius: 12px;
   margin-bottom: var(--space-l);
   @media (min-width: 570px) {
     min-width: 500px !important;
-    max-width: 800px !important;
+
     justify-content: center;
   }
 }
