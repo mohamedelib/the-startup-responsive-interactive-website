@@ -1,13 +1,8 @@
+/* NAV (host/guest switch) */
 nav button {
   all: unset;
   cursor: pointer;
 }
-.active {
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  animation: pop 0.4s ease;
-}
-
 
 nav {
   display: flex;
@@ -16,50 +11,34 @@ nav {
   text-align: center;
   border-bottom: 2px solid var(--color-border);
   max-width: 570px;
+
   @media (min-width: 570px) {
     max-width: 800px;
   }
 }
 
-/* submit button */
-.save {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  flex-direction: row;
-  transition: 0.2s cubic-bezier(0.38, -0.18, 0.08, 1.33);
+.hostbtn,
+.guestbtn {
+  width: 15em;
+  padding-bottom: 0.5em;
 
-  &:hover {
-    background-color: #cbcbcb;
-    transform: scale(1.05, 1.1);
+  @media (min-width: 570px) {
+    width: 30em;
   }
 }
 
-.hidden {
-  display: none;
-}
-
-.saved {
-  padding: 8px 45px;
+.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
   animation: pop 0.4s ease;
 }
 
-
-.pop {
-  animation: pop 0.4s cubic-bezier(0.38, -0.18, 0.08, 1.33);
+/* PAGE INTRO */
+.page-intro {
+  padding-left: var(--space-xm);
 }
 
-@keyframes pop {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
+/* DETAILS / SUMMARY */
 summary {
   display: flex;
   flex-direction: row;
@@ -89,19 +68,13 @@ details[open] summary::after {
   text-decoration: none;
 }
 
-.page-intro {
-  padding-left: var(--space-xm);
+/* FORM ELEMENTS */
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
 }
 
-.hostbtn,
-.guestbtn {
-  width: 15em;
-  padding-bottom: 0.5em;
-
-  @media (min-width: 570px) {
-    width: 30em;
-  }
-}
 .notification-type {
   display: flex;
   flex-direction: column;
@@ -122,22 +95,35 @@ details[open] summary::after {
   padding-bottom: 10px;
 }
 
-fieldset {
-  border: none;
+/* SAVE BUTTONS */
+.save {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+  transition: 0.2s cubic-bezier(0.38, -0.18, 0.08, 1.33);
+
+  &:hover {
+    background-color: #cbcbcb;
+    transform: scale(1.05, 1.1);
+  }
 }
 
-/* form {
-  @media (min-width: 570px) {
-    align-items: center;
-    margin: 0 auto;
-    justify-content: center;
-  }
- } */
+.saved {
+  padding: 8px 45px;
+  animation: pop 0.4s ease;
+}
 
-/* Keyframes */
- @keyframes pop {
+.hidden {
+  display: none;
+}
+
+.pop {
+  animation: pop 0.4s cubic-bezier(0.38, -0.18, 0.08, 1.33);
+}
+
+/* ANIMATIONS */
+@keyframes pop {
   0% {
     transform: scale(0.8);
     opacity: 0;
