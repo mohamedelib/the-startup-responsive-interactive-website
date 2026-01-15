@@ -108,19 +108,6 @@ p {
 
 /* Inputs */
 
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 3.125rem; /* 50px */
-  height: 1.75rem; /* 28px */
-  background-color: var(--primary-color);
-  border-radius: 3.125rem;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  transition: background-color 0.3s;
-  rotate: 180deg;
-}
 
 input[type="checkbox"]::after {
   content: "";
