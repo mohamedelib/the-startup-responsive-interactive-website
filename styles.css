@@ -5,6 +5,7 @@ header{
   padding-bottom: var(--space-l);
   gap: 3em;
   position: relative;
+  justify-content: space-between;
   
 }
 
@@ -17,22 +18,24 @@ header{
   }
 }
 
-ul{
+header ul{
   display: flex;
   flex-direction: row;
   gap: 3em;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  padding-right: var(--space-l);
   @media (max-width: 805px){
     display: none;
   }
 }
 .logo{
-  padding: 10px;
+  padding: 10px ;
+  padding-left: var(--space-l);
   min-width: 350px;
 
-  @media (max-width:424px){
+  @media (max-width:456px){
     display:none;
   }
 }
@@ -42,7 +45,7 @@ ul{
   justify-content: center;
   align-items: center;
 
-  @media (min-width:424px){
+  @media (min-width:456px){
 display:none;
   }
 }
@@ -80,6 +83,7 @@ nav {
 .guestbtn {
   width: 15em;
   padding-bottom: 0.5em;
+  
 
   @media (min-width: 570px) {
     width: 30em;
@@ -162,7 +166,6 @@ fieldset {
   align-items: center;
   flex-direction: row;
   transition: 0.2s cubic-bezier(0.38, -0.18, 0.08, 1.33);
-
   &:hover {
     background-color: #cbcbcb;
     transform: scale(1.05, 1.1);
@@ -192,4 +195,33 @@ fieldset {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+
+/* footer */
+Footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+  background-color: #262626;
+}
+
+
+footer li{
+  all: unset;
+text-decoration: underline ;
+color: white;
+padding: 0 15px;
+margin-bottom: 16px;
+
+}
+
+footer ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

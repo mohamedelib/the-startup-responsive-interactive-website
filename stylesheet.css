@@ -26,16 +26,25 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+
+}
 body {
   font-family: var(--font-body);
   color: var(--color-text-primary);
   background-color: var(--color-background-white);
   line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-padding: 0 var(--space-l);
-
+  padding: 0 var(--space-l);
+  padding-bottom: var(--space-l);
+  flex: 1;
 }
 ul {
   list-style: none;
@@ -44,6 +53,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  --font-body: "Open Sans", sans-serif;
 }
 
 img {
@@ -66,6 +76,11 @@ legend {
   color: var(--color-text-primary);
 }
 
+p,
+label,
+button {
+  font-family: var(--font-body);
+}
 h1 {
   font-size: 1.5rem; /* 24px */
   margin-bottom: var(--space-xs);
@@ -83,6 +98,7 @@ p {
   color: var(--color-text-primary);
   margin-bottom: var(--space-xs);
   font-size: 0, 875rem; /* 14px */
+  font-family: var(--font-body);
 }
 
 .column.text {
