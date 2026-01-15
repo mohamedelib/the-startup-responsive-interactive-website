@@ -135,10 +135,10 @@ fieldset {
   flex-direction: column;
 }
 
-form {
+/* form {
   @media (min-width: 570px) {
     align-items: center;
     margin: 0 auto;
     justify-content: center;
   }
- }
+ } */
