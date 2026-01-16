@@ -1,24 +1,22 @@
-
-header{
+header {
   display: flex;
   flex-direction: row;
   padding-bottom: var(--space-l);
   gap: 3em;
   position: relative;
   justify-content: space-between;
-  
 }
 
-.hamburger{
+.hamburger {
   position: absolute;
   right: 10px;
   top: 10px;
-  @media (min-width:805px){
+  @media (min-width: 805px) {
     display: none;
   }
 }
 
-header ul{
+header ul {
   display: flex;
   flex-direction: row;
   gap: 3em;
@@ -26,33 +24,32 @@ header ul{
   align-items: center;
   font-weight: bold;
   padding-right: var(--space-l);
-  @media (max-width: 805px){
+  @media (max-width: 805px) {
     display: none;
   }
 }
-.logo{
-  padding: 10px ;
+.logo {
+  padding: 10px;
   padding-left: var(--space-l);
   min-width: 350px;
 
-  @media (max-width:456px){
-    display:none;
+  @media (max-width: 456px) {
+    display: none;
   }
 }
 
-.logo2{
+.logo2 {
   padding-top: 10px;
   justify-content: center;
   align-items: center;
 
-  @media (min-width:456px){
-display:none;
+  @media (min-width: 456px) {
+    display: none;
   }
 }
-.logo img{
-
-  @media (max-width:424px){
-display:none;
+.logo img {
+  @media (max-width: 424px) {
+    display: none;
   }
 }
 /* NAV (host/guest switch) */
@@ -73,7 +70,7 @@ nav {
     max-width: 800px;
   }
 
-  @media (min-width:880px){
+  @media (min-width: 880px) {
     max-width: 500px;
     justify-content: space-evenly;
   }
@@ -83,7 +80,6 @@ nav {
 .guestbtn {
   width: 15em;
   padding-bottom: 0.5em;
-  
 
   @media (min-width: 570px) {
     width: 30em;
@@ -95,6 +91,22 @@ nav {
   border-bottom: 2px solid var(--primary-color);
   animation: pop 0.4s ease;
 }
+
+/* melding */
+.save-message {
+  display: flex;
+  background: rgba(255, 0, 0, 0.4);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  align-items: center;
+  padding: 10px;
+}
+
+.save-message p {
+  padding-left: var(--space-xm);
+}
+
+
 
 /* PAGE INTRO */
 .page-intro {
@@ -137,6 +149,10 @@ fieldset {
   border: none;
   display: flex;
   flex-direction: column;
+}
+
+summary p {
+   margin-bottom: var(--space-xs);
 }
 
 .notification-type {
@@ -197,9 +213,8 @@ fieldset {
   }
 }
 
-
 /* footer */
-Footer{
+Footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -210,17 +225,15 @@ Footer{
   background-color: #262626;
 }
 
-
-footer li{
+footer li {
   all: unset;
-text-decoration: underline ;
-color: white;
-padding: 0 15px;
-margin-bottom: 16px;
-
+  text-decoration: underline;
+  color: white;
+  padding: 0 15px;
+  margin-bottom: 16px;
 }
 
-footer ul{
+footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
