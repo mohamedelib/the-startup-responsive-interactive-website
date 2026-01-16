@@ -1,10 +1,11 @@
 :root {
   /* Kleuren */
-  --primary-color: hsl(150, 52%, 38%);
-  --primary-color-hover: hsl(150, 52%, 31%);
-  --color-text-primary: hsl(0, 0%, 17%);
-  --color-border: hsl(60, 4%, 89%);
+  --primary-color: hsl(166, 85%, 37%);
+  --primary-color-hover: hsl(166, 89%, 24%);
+  --color-text-primary: hsl(0, 2%, 3%);
+  --color-border: hsl(208, 6%, 57%);
   --color-background-white: hsl(0, 0%, 100%);
+  --color-danger: hsl(0, 47%, 38%);
 
   /* Typografie */
   --font-heading: "Montserrat", sans-serif;
