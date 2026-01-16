@@ -1,10 +1,11 @@
 header {
   display: flex;
   flex-direction: row;
-  padding-bottom: var(--space-l);
+  /* padding-bottom: var(--space-l); */
   gap: 3em;
   position: relative;
   justify-content: space-between;
+  border-bottom: 0.7px solid var(--color-border);
 }
 
 .hamburger {
@@ -22,7 +23,8 @@ header ul {
   gap: 3em;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+
+  color: var(--primary-color);
   padding-right: var(--space-l);
   @media (max-width: 805px) {
     display: none;
@@ -31,7 +33,7 @@ header ul {
 .logo {
   padding: 10px;
   padding-left: var(--space-l);
-  min-width: 350px;
+  min-width: 450px;
 
   @media (max-width: 456px) {
     display: none;
@@ -47,6 +49,9 @@ header ul {
     display: none;
   }
 }
+
+
+
 .logo img {
   @media (max-width: 424px) {
     display: none;
@@ -95,7 +100,7 @@ nav {
 /* melding */
 .save-message {
   display: flex;
-  background: rgba(255, 0, 0, 0.4);
+  background: var(--color-danger) 20%;
   border: 1px solid var(--color-border);
   border-radius: 20px;
   align-items: center;
@@ -104,12 +109,14 @@ nav {
 
 .save-message p {
   padding-left: var(--space-xm);
+  color: #fff;
 }
 
 
 
 /* PAGE INTRO */
 .page-intro {
+  padding-top: var(--space-l);
   padding-left: var(--space-xm);
   padding-bottom: var(--space-xm);
 }
