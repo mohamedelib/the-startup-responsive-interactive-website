@@ -26,7 +26,7 @@ header ul {
 
   color: var(--primary-color);
   padding-right: var(--space-l);
-  @media (max-width: 805px) {
+  @media (max-width: 887px) {
     display: none;
   }
 }
