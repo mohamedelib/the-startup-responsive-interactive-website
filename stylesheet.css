@@ -44,7 +44,7 @@ body {
 }
 
 main {
-  padding: 0 var(--space-l);
+  padding: 0 var(--space-m);
   padding-bottom: var(--space-l);
   flex: 1;
 }
@@ -133,7 +133,7 @@ input[type="checkbox"]::after {
   left: 3px;
   width: 1.375rem;
   height: 1.375rem;
-  background-color: var(--color-background-white);
+background-color: white;
   border-radius: 50%;
   transition: left 0.3s;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -180,7 +180,7 @@ input[type="checkbox"]::after {
   left: 3px;
   width: 1.375rem;
   height: 1.375rem;
-  background-color: var(--color-background-white);
+  background-color: white;
   border-radius: 50%;
   transition: left 0.3s;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);

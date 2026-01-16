@@ -11,7 +11,7 @@ header {
 .hamburger {
   position: absolute;
   right: 10px;
-  top: 5px;
+  top: 10px;
   @media (min-width: 887px) {
     display: none;
   }
@@ -41,7 +41,7 @@ header ul {
 }
 
 .logo2 {
-  padding-top: 10px;
+  padding: 10px 0px;
   justify-content: center;
   align-items: center;
 
