@@ -132,12 +132,7 @@ summary {
   padding-right: var(--space-s);
 }
 
-summary::marker,
-summary::-webkit-details-marker {
-  color: orangered;
-  font-size: 2rem;
-  display: none;
-}
+
 
 summary::after {
   content: "+";
