@@ -34,6 +34,8 @@
 
 
 }
+
+.visually-hidden{
   position: absolute;
   left: -9999px;
 }
@@ -193,7 +195,7 @@ h2,
 .summary-text {
   text-decoration: underline;
   text-transform: uppercase;
-  padding-left: var(--space-xm);
+  padding-left: var(--space-m);
 }
 label {
   font-weight: 100;
