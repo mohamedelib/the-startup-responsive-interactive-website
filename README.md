@@ -13,8 +13,10 @@ Interacties
 De belangrijkste interacties zijn
 
 * Wisselen tussen Host Settings en Guest Settings
+
 Feed-forward
 De twee knoppen staan naast elkaar en hebben duidelijke tekst. De gebruiker snapt direct dat hij kan wisselen tussen twee soorten instellingen.
+
 Feedback
 De active class verandert de knop stijl. Dit laat meteen zien welke tab actief is.
 De JS zet ook echt het juiste formulier aan of uit met hidden. Daardoor ziet de gebruiker meteen andere content. De pop animatie op het formulier geeft extra bevestiging dat er net iets is gewisseld.
