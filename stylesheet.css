@@ -104,8 +104,12 @@ legend {
 
 p {
   color: var(--color-text-primary);
-  font-size: 0, 875rem; /* 14px */
+  font-size: 0.875rem; /* 14px */
   font-family: var(--font-body);
+}
+
+fieldset > p{
+  font-style: italic;
 }
 
 .column.text {
@@ -187,6 +191,20 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked::after {
   left: 25px;
 }
+
+input:disabled {
+  background-color: var(--primary-color-hover);
+  cursor: not-allowed;
+}
+
+.disabled-indicator {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+      width: 24px;
+      height: 2px;
+      background: #000;
+    }
 
 
 /* De form */
