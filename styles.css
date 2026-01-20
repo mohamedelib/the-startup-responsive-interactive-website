@@ -128,34 +128,37 @@ details[open] summary::after {
 }
 
 /* FORM ELEMENTS */
+
+
 fieldset {
-  border: none;
-  display: flex;
-  flex-direction: column;
+  border: 1px solid;
+  padding: 20px 20px 0;
+  border-radius: 20px;
+  border-color: var(--color-border);
+  margin-bottom: 1.5rem;
+  background-color: var(--secondary-background-color);
 }
 
-summary p {
-  margin-bottom: var(--space-xs);
+legend {
+  display: contents;
 }
 
-.notification-type {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid var(--color-border);
-  padding: 20px var(--space-xm);
+fieldset > p {
+  margin: 0 0 20px;
 }
-
 .options {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px 30px;
+  margin: 0 -20px;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  border-top: 1px solid var(--color-border);
+  display: grid;
+  gap: 10px;
+  background-color: #fff;
 }
 
 .options label {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
 }
 
 /* SAVE BUTTONS */
@@ -171,6 +174,8 @@ summary p {
     transform: scale(1.05, 1.1);
   }
 }
+
+
 
 .saved {
   padding: 8px 45px;
