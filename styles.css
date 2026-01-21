@@ -88,7 +88,7 @@ nav button{
 /* melding */
 .save-message {
   display: flex;
-  background: #8a5a00;
+  background: #5d5a00;
   border: 1px solid var(--color-border);
   border-radius: 20px;
   align-items: center;
