@@ -36,6 +36,13 @@ De active class verandert de knop stijl. Dit laat meteen zien welke tab actief i
 De JS zet ook echt het juiste formulier aan of uit met hidden. Daardoor ziet de gebruiker meteen andere content. De pop animatie op het formulier geeft extra bevestiging dat er net iets is gewisseld.
 
 
+Videofragment interactie:
+
+
+https://github.com/user-attachments/assets/57304ef5-44ea-4217-9edf-e3d378c3b351
+
+
+
 * Opslaan van instellingen met visuele feedback
   
 Feedforward
@@ -44,6 +51,12 @@ De save message bovenaan zegt dat je onderaan moet opslaan.
 Feedback
 Na klik verberg je ik de Save knop en toon ik de Saved knop. 
 De pop animatie op saved maakt die feedback extra zichtbaar.
+
+Videofragment interactie:
+
+
+
+https://github.com/user-attachments/assets/bf90fbb8-5289-428b-a7f2-6640c1668ed1
 
 
 Ontwerpkeuzes
