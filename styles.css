@@ -92,7 +92,6 @@ nav button{
   border-radius: 20px;
   align-items: center;
   padding: 10px;
-  
 }
 
 .save-message p {
@@ -166,7 +165,6 @@ fieldset > p {
 }
 
 
-
 /* SAVE BUTTONS */
 .save {
   display: flex;
@@ -175,7 +173,7 @@ fieldset > p {
   flex-direction: row;
   position: sticky;
   top: 20px;
-  z-index: 10;
+  
   transition: 0.2s cubic-bezier(0.38, -0.18, 0.08, 1.33);
   &:hover {
     background-color: #cbcbcb;
@@ -190,7 +188,7 @@ fieldset > p {
   animation: pop 0.4s ease;
 }
 
-. {
+.hidden {
   display: none;
 }
 
