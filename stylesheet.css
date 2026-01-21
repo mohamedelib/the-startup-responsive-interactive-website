@@ -1,7 +1,7 @@
 :root {
   /* Kleuren */
   --primary-color: hsl(166, 70%, 28%);
-  --primary-color-hover: hsl(166, 89%, 24%);
+  --primary-color-hover: hsl(165, 88%, 20%);
   --color-text-primary: hsl(188, 80%, 12%);
   --color-border: hsl(208, 6%, 57%);
   --color-background-color: hsl(208, 0%, 73%);
@@ -202,6 +202,23 @@ input[type="checkbox"]:checked::after {
   left: 25px;
 }
 
+input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  background-color: var(--primary-color-hover);
+}
+
+input[type="checkbox"]:checked:disabled {
+  background-color: var(--primary-color-hover);
+}
+
+input[type="checkbox"]:checked:disabled::after {
+  left: 25px;
+}
+
+input[type="checkbox"]:checked:disabled {
+  background-color: grey;
+}
 
 /* De form */
 
