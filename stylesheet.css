@@ -56,12 +56,23 @@ main {
 }
 ul {
   list-style: none;
+  &:focus{
+    outline: 3px solid var(--color-border);
+    border-radius: 20px;
+  }
+
 }
+
 
 a {
   text-decoration: none;
   color: inherit;
   --font-body: "Open Sans", sans-serif;
+  &:focus{
+    outline: 3px solid var(--color-border);
+    border-radius: 20px;
+  }
+
 }
 
 img {
@@ -132,6 +143,10 @@ p {
 
 /* Inputs */
 
+input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--color-border);     
+  outline-offset: 3px;
+}
 input[type="checkbox"]::after {
   content: "";
   position: absolute;
@@ -162,7 +177,6 @@ input[type="checkbox"] {
   border-radius: 3.125rem;
   position: relative;
   cursor: pointer;
-  outline: none;
   transition: background-color 0.3s;
   rotate: 180deg;
 }
@@ -212,10 +226,10 @@ form {
 
 /* Button */
 
-button {
-  all: unset;
-  border: 3px solid black;
-  padding: 8px 50px;
-  margin: 0 auto;
-  border-radius: 20px;
+button{
+&:focus{
+    outline: 3px solid var(--color-border);
+    border-radius: 20px;
+  }
+
 }

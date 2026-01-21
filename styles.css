@@ -65,7 +65,8 @@ nav {
 }
 
 nav button{
-  all: unset;
+  background: none;
+  border: none;
   cursor: pointer;
   padding: 10px var(--space-m);
   font-size: 18px;
@@ -116,6 +117,11 @@ summary {
   align-items: center;
   cursor: pointer;
   padding-right: var(--space-s);
+  &:focus{
+    outline: 3px solid var(--color-border);
+    border-radius: 20px;
+  }
+
 }
 
 summary::after {
@@ -140,6 +146,7 @@ fieldset {
   border-color: var(--color-border);
   margin-bottom: 1.5rem;
   background-color: var(--secondary-background-color);
+  
 }
 
 legend {
@@ -173,6 +180,11 @@ fieldset > p {
   flex-direction: row;
   position: sticky;
   top: 20px;
+  border: 3px solid black;
+  padding: 8px 50px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #fff;
   
   transition: 0.2s cubic-bezier(0.38, -0.18, 0.08, 1.33);
   &:hover {
