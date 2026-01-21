@@ -49,7 +49,7 @@ Feedforward
 
 De save message bovenaan zegt dat je onderaan moet opslaan.
 Feedback
-Na klik verberg je ik de Save knop en toon ik de Saved knop. 
+Na klik verberg ik de Save knop en toon ik de Saved knop. 
 De pop animatie op saved maakt die feedback extra zichtbaar.
 
 Videofragment interactie:
