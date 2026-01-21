@@ -9,6 +9,17 @@ BESCHRIJVING
 Wat heb ik gemaakt
 Ik heb een interactieve instellingen pagina gebouwd met meerdere categorieën. Elke categorie is inklapbaar. Denk aan Reservations, Payments en Cancellations. Binnen elke categorie staan events met checkboxes voor notificatie kanalen.
 
+
+Toegankelijkheid
+De website is mobile first opgebouwd. Het ontwerp start bij een one column layout en schaalt mee naarmate er meer schermruimte beschikbaar is.
+
+Bij grotere schermen worden elementen naast elkaar geplaatst, zoals de navigatie. Van de beschikbare breedte wordt steeds beter gebruik van gemaakt, terwijl de inhoud overzichtelijk en leesbaar blijft. 
+
+Deze aanpak volgt de principes van mobile first en responsive design en zorgt voor een consistente ervaring op elk apparaat.
+
+
+<img width="947" height="274" alt="image" src="https://github.com/user-attachments/assets/f454f148-d8f2-4061-81dc-ef1bbc836221" />
+
 Interacties
 
 De belangrijkste interacties zijn
@@ -60,19 +71,6 @@ Ik heb een opvallende reminder toegevoegd boven de instellingen. De melding zegt
 Waarom dit werkt
 
 De melding staat direct in beeld zodra je de instellingen ziet. Je hoeft niet te scrollen om de waarschuwing te lezen. Dit is feedforward. De gebruiker weet vooraf wat hij moet doen om zijn acties af te ronden.
-
-Toegankelijkheid
-De website is mobile first opgebouwd. Het ontwerp start bij een one column layout en schaalt mee naarmate er meer schermruimte beschikbaar is.
-
-Bij grotere schermen worden elementen naast elkaar geplaatst, zoals de navigatie. Van de beschikbare breedte wordt steeds beter gebruik van gemaakt, terwijl de inhoud overzichtelijk en leesbaar blijft. 
-
-Deze aanpak volgt de principes van mobile first en responsive design en zorgt voor een consistente ervaring op elk apparaat.
-
-
-<img width="947" height="274" alt="image" src="https://github.com/user-attachments/assets/f454f148-d8f2-4061-81dc-ef1bbc836221" />
-
-
-De kleuren van de melding zijn getest op color contrast. De tekst blijft goed leesbaar voor mensen met verminderd zicht. Dit sluit aan bij WCAG richtlijnen voor contrast tussen tekst en achtergrond.
 
 Feedback na actie
 
