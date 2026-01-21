@@ -92,13 +92,14 @@ KENMERKEN
 HTML structuur
 
 Een voorbeeld van code:
-```
 
+```
 <details>
           <summary>
             <span class="summary-text">Reservations</span>
           </summary>
-
+```
+```
           <fieldset>
             <legend>New reservation request</legend>
             <p>When a wants to book your spot.</p>
@@ -115,7 +116,7 @@ Een voorbeeld van code:
               /></label>
             </div>
           </fieldset>
-          ```
+```
 
 De pagina gebruikt semantische HTML.
 Header bevat logo en navigatie.
