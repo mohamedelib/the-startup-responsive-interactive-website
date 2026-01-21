@@ -88,7 +88,34 @@ De volledige WCAG audit is [hier](https://github.com/mohamedelib/the-startup-res
 
 KENMERKEN
 
+
 HTML structuur
+
+Een voorbeeld van code:
+```
+
+<details>
+          <summary>
+            <span class="summary-text">Reservations</span>
+          </summary>
+
+          <fieldset>
+            <legend>New reservation request</legend>
+            <p>When a wants to book your spot.</p>
+
+            <div class="options">
+              <label
+                >Email <input type="checkbox" name="reservation_request"
+              /></label>
+              <label
+                >Push (App) <input type="checkbox" name="reservation_request"
+              /></label>
+              <label
+                >SMS <input type="checkbox" name="reservation_request"
+              /></label>
+            </div>
+          </fieldset>
+          ```
 
 De pagina gebruikt semantische HTML.
 Header bevat logo en navigatie.
@@ -98,6 +125,18 @@ Categorieën zijn opgebouwd met details en summary.
 
 CSS
 
+Een voorbeeld van code:
+```
+.save-message {
+  display: flex;
+  background: #5d5a00;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  align-items: center;
+  padding: 10px;
+}
+```
+
 CSS regelt de layout en de zichtbaarheid.
 Ik gebruik flexbox voor uitlijning van knoppen en opties.
 Ik gebruik een hidden class om Host en Guest forms te tonen of te verbergen.
@@ -105,6 +144,22 @@ Media queries zorgen dat de layout zich aanpast aan schermgrootte.
 Visuele feedback zoals actieve knoppen en save status gebeurt met classes.( die toegevoegd of weggehaald worden in javascript)
 
 JavaScript
+
+
+Een voorbeeld van code:
+```
+// 1: selecteer de button
+let saveButton = document.querySelector('.save');
+let feedbackButton= document.querySelector('.saved');
+console.log(saveButton);
+// 2: wacht op een klik
+saveButton.addEventListener("click", function(){
+ // 3: laat de feedback button zien, door een class weg te halen en toe tevoegen.
+saveButton.classList.add("hidden");
+feedbackButton.classList.remove("hidden");
+})
+```
+
 
 JavaScript regelt de interactie.
 Het script wisselt tussen Host Settings en Guest Settings.
