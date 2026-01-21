@@ -9,6 +9,17 @@ BESCHRIJVING
 Wat heb ik gemaakt
 Ik heb een interactieve instellingen pagina gebouwd met meerdere categorieën. Elke categorie is inklapbaar. Denk aan Reservations, Payments en Cancellations. Binnen elke categorie staan events met checkboxes voor notificatie kanalen.
 
+
+Toegankelijkheid
+De website is mobile first opgebouwd. Het ontwerp start bij een one column layout en schaalt mee naarmate er meer schermruimte beschikbaar is.
+
+Bij grotere schermen worden elementen naast elkaar geplaatst, zoals de navigatie. Van de beschikbare breedte wordt steeds beter gebruik van gemaakt, terwijl de inhoud overzichtelijk en leesbaar blijft. 
+
+Deze aanpak volgt de principes van mobile first en responsive design en zorgt voor een consistente ervaring op elk apparaat.
+
+
+<img width="947" height="274" alt="image" src="https://github.com/user-attachments/assets/f454f148-d8f2-4061-81dc-ef1bbc836221" />
+
 Interacties
 
 De belangrijkste interacties zijn
@@ -25,14 +36,27 @@ De active class verandert de knop stijl. Dit laat meteen zien welke tab actief i
 De JS zet ook echt het juiste formulier aan of uit met hidden. Daardoor ziet de gebruiker meteen andere content. De pop animatie op het formulier geeft extra bevestiging dat er net iets is gewisseld.
 
 
+Videofragment interactie:
+
+
+https://github.com/user-attachments/assets/57304ef5-44ea-4217-9edf-e3d378c3b351
+
+
+
 * Opslaan van instellingen met visuele feedback
   
 Feedforward
 
 De save message bovenaan zegt dat je onderaan moet opslaan.
 Feedback
-Na klik verberg je ik de Save knop en toon ik de Saved knop. 
+Na klik verberg ik de Save knop en toon ik de Saved knop. 
 De pop animatie op saved maakt die feedback extra zichtbaar.
+
+Videofragment interactie:
+
+
+
+https://github.com/user-attachments/assets/bf90fbb8-5289-428b-a7f2-6640c1668ed1
 
 
 Ontwerpkeuzes
@@ -61,17 +85,51 @@ Waarom dit werkt
 
 De melding staat direct in beeld zodra je de instellingen ziet. Je hoeft niet te scrollen om de waarschuwing te lezen. Dit is feedforward. De gebruiker weet vooraf wat hij moet doen om zijn acties af te ronden.
 
-Toegankelijkheid
-
-De kleuren van de melding zijn getest op color contrast. De tekst blijft goed leesbaar voor mensen met verminderd zicht. Dit sluit aan bij WCAG richtlijnen voor contrast tussen tekst en achtergrond.
-
 Feedback na actie
 
 Na het klikken op Save verandert de knop naar Saved. Dit bevestigt dat de actie is gelukt.
 
+
+
+WCAG AUDIT
+
+Voor dit project heb ik een WCAG audit uitgevoerd om de toegankelijkheid te controleren. Ik heb gekeken naar contrast, toetsenbordbediening, structuur en leesbaarheid. De uitkomst en verbeterpunten heb ik vastgelegd in de wiki.
+
+De volledige WCAG audit is [hier](https://github.com/mohamedelib/the-startup-responsive-interactive-website/wiki/WCAG-Audit
+) te vinden
+
+
 KENMERKEN
 
+
 HTML structuur
+
+Een voorbeeld van code:
+
+```
+<details>
+          <summary>
+            <span class="summary-text">Reservations</span>
+          </summary>
+```
+```
+          <fieldset>
+            <legend>New reservation request</legend>
+            <p>When a wants to book your spot.</p>
+
+            <div class="options">
+              <label
+                >Email <input type="checkbox" name="reservation_request"
+              /></label>
+              <label
+                >Push (App) <input type="checkbox" name="reservation_request"
+              /></label>
+              <label
+                >SMS <input type="checkbox" name="reservation_request"
+              /></label>
+            </div>
+          </fieldset>
+```
 
 De pagina gebruikt semantische HTML.
 Header bevat logo en navigatie.
@@ -81,6 +139,18 @@ Categorieën zijn opgebouwd met details en summary.
 
 CSS
 
+Een voorbeeld van code:
+```
+.save-message {
+  display: flex;
+  background: #5d5a00;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  align-items: center;
+  padding: 10px;
+}
+```
+
 CSS regelt de layout en de zichtbaarheid.
 Ik gebruik flexbox voor uitlijning van knoppen en opties.
 Ik gebruik een hidden class om Host en Guest forms te tonen of te verbergen.
@@ -88,6 +158,22 @@ Media queries zorgen dat de layout zich aanpast aan schermgrootte.
 Visuele feedback zoals actieve knoppen en save status gebeurt met classes.( die toegevoegd of weggehaald worden in javascript)
 
 JavaScript
+
+
+Een voorbeeld van code:
+```
+// 1: selecteer de button
+let saveButton = document.querySelector('.save');
+let feedbackButton= document.querySelector('.saved');
+console.log(saveButton);
+// 2: wacht op een klik
+saveButton.addEventListener("click", function(){
+ // 3: laat de feedback button zien, door een class weg te halen en toe tevoegen.
+saveButton.classList.add("hidden");
+feedbackButton.classList.remove("hidden");
+})
+```
+
 
 JavaScript regelt de interactie.
 Het script wisselt tussen Host Settings en Guest Settings.
