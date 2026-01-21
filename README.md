@@ -63,6 +63,9 @@ De melding staat direct in beeld zodra je de instellingen ziet. Je hoeft niet te
 
 Toegankelijkheid
 
+<img width="947" height="274" alt="image" src="https://github.com/user-attachments/assets/f454f148-d8f2-4061-81dc-ef1bbc836221" />
+
+
 De kleuren van de melding zijn getest op color contrast. De tekst blijft goed leesbaar voor mensen met verminderd zicht. Dit sluit aan bij WCAG richtlijnen voor contrast tussen tekst en achtergrond.
 
 Feedback na actie
