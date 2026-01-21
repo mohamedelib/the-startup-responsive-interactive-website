@@ -76,6 +76,16 @@ Feedback na actie
 
 Na het klikken op Save verandert de knop naar Saved. Dit bevestigt dat de actie is gelukt.
 
+
+
+WCAG AUDIT
+
+Voor dit project heb ik een WCAG audit uitgevoerd om de toegankelijkheid te controleren. Ik heb gekeken naar contrast, toetsenbordbediening, structuur en leesbaarheid. De uitkomst en verbeterpunten heb ik vastgelegd in de wiki.
+
+De volledige WCAG audit is [hier](https://github.com/mohamedelib/the-startup-responsive-interactive-website/wiki/WCAG-Audit
+) te vinden
+
+
 KENMERKEN
 
 HTML structuur
