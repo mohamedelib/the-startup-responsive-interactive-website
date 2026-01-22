@@ -1,4 +1,7 @@
 The Startup Notification Settings Pagina
+[Live website](https://mohamedelib.github.io/the-startup-responsive-interactive-website/)
+
+
 
 Korte uitleg van de opdracht en oplossing
 HomeCamper gaf de opdracht om een notificatie preferences pagina te maken. Hosts en guests moeten zelf kunnen kiezen hoe zij meldingen ontvangen. De keuzes zijn email, push en sms of whatsapp.
@@ -180,5 +183,15 @@ Het script wisselt tussen Host Settings en Guest Settings.
 Het script zet de juiste active class op de knoppen.
 Het script toont de Saved status na het klikken op Save.
 
-[Live website](https://mohamedelib.github.io/the-startup-responsive-interactive-website/)
+Bronnen
+
+https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_html
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 
