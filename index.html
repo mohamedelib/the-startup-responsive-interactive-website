@@ -27,7 +27,13 @@
           height="35"
         />
       </a>
-      <img class="hamburger" alt="hamburger-menu" src="./fotos/more.png" width="35" height="35" />
+      <img
+        class="hamburger"
+        alt="hamburger-menu"
+        src="./fotos/more.png"
+        width="35"
+        height="35"
+      />
       <ul>
         <li><a href="#" class="nav-link">Calendar</a></li>
         <li><a href="#" class="nav-link">Bookings</a></li>
@@ -58,307 +64,342 @@
       </nav>
       <section class="info">
         <h2 class="visually-hidden">Settings</h2>
-      <div class="save-message">
-        <p>Don't forget to save your preferences at the bottom of the page!</p>
-      </div>
-      <!-- Form  -->
-      <form class="host-settings">
-        <details>
-          <summary>
-            <span class="summary-text">Reservations</span>
-          </summary>
+        <div class="save-message">
+          <p>
+            Don't forget to save your preferences at the bottom of the page!
+          </p>
+        </div>
 
-          <fieldset>
-            <legend>New reservation request</legend>
-            <p>When a wants to book your spot.</p>
+        <!-- Form  -->
+        <form class="host-settings">
+          <details>
+            <summary>
+              <span class="summary-text">Reservations</span>
+            </summary>
 
-            <div class="options">
-              <label
-                >Email <input type="checkbox" name="reservation_request" disabled 
-              /></label>
-              <label
-                >Push (App) <input type="checkbox" name="reservation_request"
-              /></label>
-              <label
-                >SMS <input type="checkbox" name="reservation_request" checked disabled
-              /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>New reservation request</legend>
+              <p>When a wants to book your spot.</p>
 
-          <fieldset>
-            <legend>New message</legend>
-            <p>Direct chat with your guests.</p>
+              <div class="options">
+                <label
+                  >Email
+                  <input type="checkbox" name="reservation_request" disabled
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="reservation_request"
+                /></label>
+                <label
+                  >SMS
+                  <input
+                    type="checkbox"
+                    name="reservation_request"
+                    checked
+                    disabled
+                /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label>Email <input type="checkbox" name="new_message" /></label>
-              <label
-                >Push (App) <input type="checkbox" name="new_message"
-              /></label>
-              <label>SMS <input type="checkbox" name="new_message" /></label>
-            </div>
-          </fieldset>
-        </details>
+            <fieldset>
+              <legend>New message</legend>
+              <p>Direct chat with your guests.</p>
 
-        <details>
-          <summary><span class="summary-text">Payments</span></summary>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="new_message"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="new_message"
+                /></label>
+                <label>SMS <input type="checkbox" name="new_message" /></label>
+              </div>
+            </fieldset>
+          </details>
 
-          <fieldset>
-            <legend>Payment received</legend>
-            <p>Confirmation that the booking is paid.</p>
+          <details>
+            <summary><span class="summary-text">Payments</span></summary>
 
-            <div class="options">
-              <label
-                >Email <input type="checkbox" name="payment_received"
-              /></label>
-              <label
-                >Push (App) <input type="checkbox" name="payment_received"
-              /></label>
-              <label
-                >SMS <input type="checkbox" name="payment_received"
-              /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Payment received</legend>
+              <p>Confirmation that the booking is paid.</p>
 
-          <fieldset>
-            <legend>Payment pending</legend>
-            <p>A guest has started the payment process.</p>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="payment_received"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="payment_received"
+                /></label>
+                <label
+                  >SMS <input type="checkbox" name="payment_received"
+                /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label
-                >Email <input type="checkbox" name="payment_pending"
-              /></label>
-              <label
-                >Push (App) <input type="checkbox" name="payment_pending"
-              /></label>
-              <label
-                >SMS <input type="checkbox" name="payment_pending"
-              /></label>
-            </div>
-          </fieldset>
-        </details>
+            <fieldset>
+              <legend>Payment pending</legend>
+              <p>A guest has started the payment process.</p>
 
-        <details>
-          <summary><span class="summary-text">Cancellations</span></summary>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="payment_pending"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="payment_pending"
+                /></label>
+                <label
+                  >SMS <input type="checkbox" name="payment_pending"
+                /></label>
+              </div>
+            </fieldset>
+          </details>
 
-          <fieldset>
-            <legend>Booking cancelled</legend>
-            <p>By guest, host, or support.</p>
+          <details>
+            <summary><span class="summary-text">Cancellations</span></summary>
 
-            <div class="options">
-              <label
-                >Email <input type="checkbox" name="booking_cancelled"
-              /></label>
-              <label
-                >Push (App) <input type="checkbox" name="booking_cancelled"
-              /></label>
-              <label
-                >SMS <input type="checkbox" name="booking_cancelled"
-              /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Booking cancelled</legend>
+              <p>By guest, host, or support.</p>
 
-          <fieldset>
-            <legend>Expired request</legend>
-            <p>Request cancelled after 108 hours.</p>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="booking_cancelled"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="booking_cancelled"
+                /></label>
+                <label
+                  >SMS <input type="checkbox" name="booking_cancelled"
+                /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label
-                >Email <input type="checkbox" name="expired_request"
-              /></label>
-              <label
-                >Push (App) <input type="checkbox" name="expired_request"
-              /></label>
-              <label
-                >SMS <input type="checkbox" name="expired_request"
-              /></label>
-            </div>
-          </fieldset>
-        </details>
+            <fieldset>
+              <legend>Expired request</legend>
+              <p>Request cancelled after 108 hours.</p>
 
-        <details>
-          <summary><span class="summary-text">Reminders</span></summary>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="expired_request"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="expired_request"
+                /></label>
+                <label
+                  >SMS <input type="checkbox" name="expired_request"
+                /></label>
+              </div>
+            </fieldset>
+          </details>
 
-          <fieldset>
-            <legend>Unanswered request (12h)</legend>
-            <p>Friendly reminder to reply to a guest.</p>
+          <details>
+            <summary><span class="summary-text">Reminders</span></summary>
 
-            <div class="options">
-              <label
-                >Email <input type="checkbox" name="unanswered_12h"
-              /></label>
-              <label
-                >Push (App) <input type="checkbox" name="unanswered_12h"
-              /></label>
-              <label>SMS <input type="checkbox" name="unanswered_12h" /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Unanswered request (12h)</legend>
+              <p>Friendly reminder to reply to a guest.</p>
 
-          <fieldset>
-            <legend>Write a review</legend>
-            <p>Review your guest 20 days after their stay.</p>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="unanswered_12h"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="unanswered_12h"
+                /></label>
+                <label
+                  >SMS <input type="checkbox" name="unanswered_12h"
+                /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label>Email <input type="checkbox" name="write_review" /></label>
-              <label
-                >Push (App) <input type="checkbox" name="write_review"
-              /></label>
-              <label>SMS <input type="checkbox" name="write_review" /></label>
-            </div>
-          </fieldset>
-        </details>
-      </form>
+            <fieldset>
+              <legend>Write a review</legend>
+              <p>Review your guest 20 days after their stay.</p>
 
-      <!-- einde host settings -->
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="write_review"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="write_review"
+                /></label>
+                <label>SMS <input type="checkbox" name="write_review" /></label>
+              </div>
+            </fieldset>
+          </details>
+        </form>
 
-      <!-- Guest settings -->
-      <form class="guest-settings hidden">
-        <details>
-          <summary><span class="summary-text">Your bookings</span></summary>
+        <!-- einde host settings -->
 
-          <fieldset>
-            <legend>Reservation requested</legend>
-            <p>Confirmation that your booking request was sent.</p>
+        <!-- Guest settings -->
+        <form class="guest-settings hidden">
+          <details>
+            <summary><span class="summary-text">Your bookings</span></summary>
 
-            <div class="options">
-              <label>Email <input type="checkbox" name="reservation" disabled /></label>
-              <label
-                >Push (App) <input type="checkbox" name="reservation"
-              /></label>
-              <label>SMS <input type="checkbox" name="reservation" /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Reservation requested</legend>
+              <p>Confirmation that your booking request was sent.</p>
 
-          <fieldset>
-            <legend>Booking accepted</legend>
-            <p>When a host approves your stay.</p>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="reservation" disabled
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="reservation"
+                /></label>
+                <label>SMS <input type="checkbox" name="reservation" /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label>Email <input type="checkbox" name="direct-chat" /></label>
-              <label
-                >Push (App) <input type="checkbox" name="direct-chat"
-              /></label>
-              <label>SMS <input type="checkbox" name="direct-chat" /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Booking accepted</legend>
+              <p>When a host approves your stay.</p>
 
-          <fieldset>
-            <legend>Booking rejected</legend>
-            <p>When a host cannot accommodate your request.</p>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="direct-chat"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="direct-chat"
+                /></label>
+                <label>SMS <input type="checkbox" name="direct-chat" /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label
-                >Email <input type="checkbox" name="bookingconfirmation"
-              /></label>
-              <label
-                >Push (App) <input type="checkbox" name="bookingconfirmation"
-              /></label>
-              <label
-                >SMS <input type="checkbox" name="bookingconfirmation"
-              /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Booking rejected</legend>
+              <p>When a host cannot accommodate your request.</p>
 
-          <fieldset>
-            <legend>Host proposes changes</legend>
-            <p>When a host suggests new dates or a different price.</p>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="bookingconfirmation"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="bookingconfirmation"
+                /></label>
+                <label
+                  >SMS <input type="checkbox" name="bookingconfirmation"
+                /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label>Email <input type="checkbox" name="host-changes" /></label>
-              <label
-                >Push (App) <input type="checkbox" name="host-changes"
-              /></label>
-              <label>SMS <input type="checkbox" name="host-changes" /></label>
-            </div>
-          </fieldset>
-        </details>
+            <fieldset>
+              <legend>Host proposes changes</legend>
+              <p>When a host suggests new dates or a different price.</p>
 
-        <details>
-          <summary>
-            <span class="summary-text">Payments & Cancellations</span>
-          </summary>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="host-changes"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="host-changes"
+                /></label>
+                <label>SMS <input type="checkbox" name="host-changes" /></label>
+              </div>
+            </fieldset>
+          </details>
 
-          <fieldset>
-            <legend>Payment successful</legend>
-            <p>Confirmation that your payment has been received.</p>
+          <details>
+            <summary>
+              <span class="summary-text">Payments & Cancellations</span>
+            </summary>
 
-            <div class="options">
-              <label>Email <input type="checkbox" name="payment" /></label>
-              <label>Push (App) <input type="checkbox" name="payment" /></label>
-              <label>SMS <input type="checkbox" name="payment" /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Payment successful</legend>
+              <p>Confirmation that your payment has been received.</p>
 
-          <fieldset>
-            <legend>Booking cancelled</legend>
-            <p>When a booking is cancelled by you, the host, or support.</p>
+              <div class="options">
+                <label>Email <input type="checkbox" name="payment" /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="payment"
+                /></label>
+                <label>SMS <input type="checkbox" name="payment" /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label>Email <input type="checkbox" name="cancelled" /></label>
-              <label
-                >Push (App) <input type="checkbox" name="cancelled"
-              /></label>
-              <label>SMS <input type="checkbox" name="cancelled" /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Booking cancelled</legend>
+              <p>When a booking is cancelled by you, the host, or support.</p>
 
-          <fieldset>
-            <legend>Payment reminder</legend>
-            <p>A reminder to complete your payment to secure the spot.</p>
+              <div class="options">
+                <label>Email <input type="checkbox" name="cancelled" /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="cancelled"
+                /></label>
+                <label>SMS <input type="checkbox" name="cancelled" /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label
-                >Email <input type="checkbox" name="payment-reminder"
-              /></label>
-              <label
-                >Push (App) <input type="checkbox" name="payment-reminder"
-              /></label>
-              <label
-                >SMS <input type="checkbox" name="payment-reminder"
-              /></label>
-            </div>
-          </fieldset>
+            <fieldset>
+              <legend>Payment reminder</legend>
+              <p>A reminder to complete your payment to secure the spot.</p>
 
-          <fieldset>
-            <legend>Automatic cancellation</legend>
-            <p>When a booking expires due to inactivity or non-payment.</p>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="payment-reminder"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="payment-reminder"
+                /></label>
+                <label
+                  >SMS <input type="checkbox" name="payment-reminder"
+                /></label>
+              </div>
+            </fieldset>
 
-            <div class="options">
-              <label
-                >Email <input type="checkbox" name="auto-cancellation"
-              /></label>
-              <label
-                >Push (App) <input type="checkbox" name="auto-cancellation"
-              /></label>
-              <label
-                >SMS <input type="checkbox" name="auto-cancellation"
-              /></label>
-            </div>
-          </fieldset>
-        </details>
+            <fieldset>
+              <legend>Automatic cancellation</legend>
+              <p>When a booking expires due to inactivity or non-payment.</p>
 
-        <details>
-          <summary><span class="summary-text">Reviews</span></summary>
+              <div class="options">
+                <label
+                  >Email <input type="checkbox" name="auto-cancellation"
+                /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="auto-cancellation"
+                /></label>
+                <label
+                  >SMS <input type="checkbox" name="auto-cancellation"
+                /></label>
+              </div>
+            </fieldset>
+          </details>
 
-          <fieldset>
-            <legend>Review your stay</legend>
-            <p>A reminder to share your experience after your trip.</p>
+          <details>
+            <summary><span class="summary-text">Reviews</span></summary>
 
-            <div class="options">
-              <label>Email <input type="checkbox" name="review" /></label>
-              <label>Push (App) <input type="checkbox" name="review" /></label>
-              <label>SMS <input type="checkbox" name="review" /></label>
-            </div>
-          </fieldset>
-        </details>
-      </form>
+            <fieldset>
+              <legend>Review your stay</legend>
+              <p>A reminder to share your experience after your trip.</p>
+
+              <div class="options">
+                <label>Email <input type="checkbox" name="review" /></label>
+                <label
+                  >Push (App) <input type="checkbox" name="review"
+                /></label>
+                <label>SMS <input type="checkbox" name="review" /></label>
+              </div>
+            </fieldset>
+          </details>
+        </form>
       </section>
 
       <button class="save" type="button">
-        <img src="./fotos/save-instagram.png"  alt="save icon" width="38" height="38" />
+        <img
+          src="./fotos/save-instagram.png"
+          alt="save icon"
+          width="38"
+          height="38"
+        />
         Save
       </button>
       <button class="save saved hidden" type="button">
-        <img src="./fotos/bookmark.png" alt="save icon" width="38" height="38" />
+        <img
+          src="./fotos/bookmark.png"
+          alt="save icon"
+          width="38"
+          height="38"
+        />
         Saved
       </button>
     </main>
@@ -371,4 +412,4 @@
       </ul>
     </footer>
   </body>
-    </html>
+</html>
